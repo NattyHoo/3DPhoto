@@ -84,7 +84,7 @@
 		}
 	</style>
 </head>
-<body onclick="Toast('我爱你1314',2000)">
+<body onclick="Toast('我爱你1314',2000);">
 	<div class="container">
 		<div class="stage">
 			<!--舞台层-->
@@ -124,6 +124,7 @@
 
 	//自定义弹框
 	function Toast(msg,duration){
+		alert(1);
 	    duration=isNaN(duration)?3000:duration;
 	    var m = document.createElement('div');
 	    m.innerHTML = msg;
